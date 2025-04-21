@@ -1,6 +1,11 @@
-[unit]
+[Unit]
+
 After=network.target
-[service]
+
+[Service]
+
 ExecStart=/usr/local/bin/hello_cloud.py 80
-[install]
-wantedBy=default.target
+
+[Install]
+
+WantedBy=default.target
